@@ -46,7 +46,7 @@ Requires:	gDeskCal
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_skindir	%{_datadir}/gdeskcal/skins
+%define		_skindir	%{_datadir}/gdeskcal/skins
 
 %description
 Skins for gDeskCal.
