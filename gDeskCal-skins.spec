@@ -2,7 +2,7 @@ Summary:	Skins for gDeskCal
 Summary(pl):	Skórki dla gDeskCal
 Name:		gDeskCal-skins
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.pycage.de/download/skins/gdeskcal/august.tar.gz
@@ -35,6 +35,12 @@ Source13:	http://www.pycage.de/download/skins/gdeskcal/LCD.tar.gz
 # Source13-md5:	17025cacdd5b6fab611e28af7078c6fa
 Source14:	http://www.pycage.de/download/skins/gdeskcal/miderat.tar.gz
 # Source14-md5:	3034f02a06bd855ad20ae14fb2249993
+Source15:	http://www.pycage.de/download/skins/gdeskcal/clearlemon.tar.gz
+# Source15-md5:	10b38c844dbe836daac5ebeb4da7fdf1
+Source16:	http://www.pycage.de/download/skins/gdeskcal/august_big.tar.gz
+# Source16-md5:	28420823650d1c5b80af006d706ec48a
+Source17:	http://www.pycage.de/download/skins/gdeskcal/XFCE.tar.gz
+# Source17-md5:	62abdfc732a3c6aff1ab1361f50bdbac
 URL:		http://www.pycage.de/software_gdeskcal_skins.html
 Requires:	gDeskCal
 BuildArch:	noarch
@@ -71,6 +77,9 @@ gzip -dc %{SOURCE12} | tar -x -C $RPM_BUILD_ROOT%{_skindir}
 gzip -dc %{SOURCE13} | tar -x -C $RPM_BUILD_ROOT%{_skindir}
 gzip -dc %{SOURCE14} | tar -x -C $RPM_BUILD_ROOT%{_skindir}
 mv $RPM_BUILD_ROOT%{_skindir}/miderat $RPM_BUILD_ROOT%{_skindir}/miderat_cool
+gzip -dc %{SOURCE15} | tar -x -C $RPM_BUILD_ROOT%{_skindir}
+gzip -dc %{SOURCE16} | tar -x -C $RPM_BUILD_ROOT%{_skindir}
+gzip -dc %{SOURCE17} | tar -x -C $RPM_BUILD_ROOT%{_skindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
