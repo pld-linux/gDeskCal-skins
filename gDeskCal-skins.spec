@@ -1,5 +1,5 @@
 Summary:	Skins for gDeskCal
-Summary(pl.UTF-8):   Skórki dla gDeskCal
+Summary(pl.UTF-8):	Skórki dla gDeskCal
 Name:		gDeskCal-skins
 Version:	1.0
 Release:	2
